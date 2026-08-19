@@ -1,5 +1,3 @@
-
-
 let salary = 30000;
 let bonus = 5000;
 let tax = 2000;
@@ -11,7 +9,7 @@ console.log("Final Salary:", finalSalary);
 
 
 
-console.log("\n2. Predict the Output");
+
 
 let a = 10;
 let b = a++;
@@ -24,7 +22,6 @@ console.log(c);
 
 
 
-console.log("\n3. Logical Operators");
 
 console.log(10 > 5 && 20 < 10 || 5 === "5");
 console.log(10 < 5 || 20 >= 20 && 5 == "5");
@@ -33,7 +30,6 @@ console.log(!(10 > 5));
 
 
 
-console.log("\n4. ATM Withdrawal");
 
 let balance = 10000;
 let withdrawal = 2500;
@@ -52,7 +48,7 @@ if (withdrawal <= 0) {
 }
 
 
-console.log("\n5. Student Grade");
+
 
 let mark = 78;
 
@@ -71,7 +67,6 @@ if (mark >= 90 && mark <= 100) {
 
 
 
-console.log("\n6. Nested Login");
 
 let username = "admin";
 let password = "1234";
@@ -97,7 +92,7 @@ if (username === "admin") {
 
 
 
-console.log("\n7. Number Pattern");
+
 
 for (let i = 1; i <= 10; i++) {
     console.log(i);
@@ -105,7 +100,6 @@ for (let i = 1; i <= 10; i++) {
 
 
 
-console.log("\n8. Multiplication Table");
 
 let num = 7;
 
@@ -116,7 +110,7 @@ for (let i = 1; i <= 10; i++) {
 
 
 
-console.log("\n9. Reverse Countdown");
+
 
 let count = 10;
 
@@ -128,7 +122,6 @@ while (count >= 0) {
 
 
 
-console.log("\n10. OTP System");
 
 let correctOTP = 1234;
 let attempts = 0;
@@ -161,7 +154,6 @@ if (!verified) {
 
 
 
-console.log("\n11. Array Search");
 
 let fruits = [
     "apple",
@@ -181,8 +173,6 @@ console.log("Last fruit:", fruits[fruits.length - 1]);
 
 
 
-console.log("\n12. Object Details");
-
 let employeeData = {
     name: "Arun",
     empId: "STK-101",
@@ -195,7 +185,6 @@ for (let key in employeeData) {
 }
 
 
-console.log("\n13. Calculator Function");
 
 function calculator(a, b, operator) {
 
@@ -227,7 +216,7 @@ console.log(calculator(20, 5, "%"));
 
 
 
-console.log("\n14. Employee Salary");
+
 
 function salaryDetails(salary, bonus) {
     return salary + bonus;
@@ -237,7 +226,7 @@ console.log(salaryDetails(40000, 5000));
 
 
 
-console.log("\n15. Default Parameter");
+
 
 function employee(name, role = "Trainee") {
     console.log("Name:", name);
@@ -249,7 +238,7 @@ employee("Kamal", "Developer");
 
 
 
-console.log("\n16. Callback Task");
+
 
 function calculate(a, b, callback) {
     let result = a + b;
@@ -274,7 +263,7 @@ calculate(10, 5, mul);
 
 
 
-console.log("\n17. Generator Task");
+
 
 function* rewards() {
 
@@ -297,7 +286,7 @@ console.log(reward.next().value);
 
 
 
-console.log("\n18. Spread Operator");
+
 
 let frontend = [
     "HTML",
@@ -317,5 +306,50 @@ console.log(fullStack);
 
 
 
-console.log("\n19. Array Destructuring");
 
+
+let studentData = [
+    "Arun",
+    "ECE",
+    8.5,
+    "Developer"
+];
+
+let [
+    studentName,
+    department,
+    cgpa,
+    role
+] = studentData;
+
+console.log("Name:", studentName);
+console.log("Department:", department);
+console.log("CGPA:", cgpa);
+console.log("Role:", role);
+
+
+
+
+
+
+let company = {
+    name: "Stackly",
+
+    employee: {
+        name: "Arun",
+        role: "Developer",
+        salary: 50000
+    }
+};
+
+let {
+    employee: {
+        name: employeeName,
+        role: employeeRole,
+        salary: employeeSalary
+    }
+} = company;
+
+console.log("Employee Name:", employeeName);
+console.log("Role:", employeeRole);
+console.log("Salary:", employeeSalary);
